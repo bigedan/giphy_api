@@ -1,43 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Giphy API</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+	<title></title>
 </head>
 <body>
-	<div id="buttonHere"></div>
-	<div id="gifsHere"></div>
 
- <script type="text/javascript">
-
- 	var topics = ["Acai", "Barberry","Bilberry","Blackcurrant","Blueberry","Boysenberry","Cloudberry","Cranberry","Elderberry","Goji Berry","Gooseberry","Huckleberry","Lingonberry","Loganberry","Marionberry","Mulberry","Raspberry", "Black Berry","Golden Berry","Red Berry","Salmonberry"];
-
- 	for (var i = 0; i < topics.length; i++){
- 		var button = $("<button>" + topics[i]+ "</button>")
- 		$("#buttonHere").append(button);
- 	}
- 	$("#buttonHere").on("click", function (event){
- 		event.preventDefault();
-	var berry = (this).attr("data-person");
- 	var queryURL ="https://api.giphy.com/v1/gifs/search?q=" + berry + "&api_key=eejgKEuBRPrMbeMvfSxPzrJXjApElEz6&limit=10";
- 	$.ajax({
- 		url: queryURL,
- 		method: "GET"
- 	}).done(function(response) {
- 		console.log(response);
- 	})});
-
-
- 	
-
-
-
-
-
-
-
-</script>
- 
 </body>
 </html>
