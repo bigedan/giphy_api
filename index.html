@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
 
+<head>
+    <title>Giphy API</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+	    <div class="container">
+        <h1>Berry Gif Search</h1>
+        <!-- Movies will Get Dumped Dere -->
+        <div id="gif-view"></div>
+        <!-- Rendered Buttons will get Dumped Here  -->
+        <div id="buttons-view"></div>
+        <form id="movie-form">
+            <label for="berry-input">Add your favorite berry</label>
+            <input type="text" id="berry-input">
+            <br>
+            <!-- Button triggers new movie to be added -->
+            <input id="add-berry" type="submit" value="Submit">
+        </form>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/javascript/giphy.js"></script>
 </body>
+
 </html>
